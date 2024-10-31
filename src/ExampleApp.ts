@@ -47,16 +47,6 @@ export class ExampleApp extends gfx.GfxApp
         } else {
             this.renderer.background = new gfx.Color(40/255, 45/255, 46/255)
 
-            this.ambientLight.diffuseIntensity = new gfx.Vector3(20/255, 20/255, 20/255);
-
-            this.pointLight.visible = true;
-            this.pointLight.position = new gfx.Vector3(800, 60, -400);
-            this.pointLight.diffuseIntensity = new gfx.Vector3(200/255, 200/255, 150/255);
-            this.pointLight.specularIntensity = new gfx.Vector3(100/255, 100/255, 100/255);
-
-            this.directionalLight.visible = false;
-
-            this.lamp.material = this.lampNightMaterial;
         }
     }
 
